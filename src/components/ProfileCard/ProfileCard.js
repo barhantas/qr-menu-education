@@ -6,11 +6,15 @@ import ProfileDescription from "../ProfileDescription";
 import "./index.css";
 
 function ProfileCard() {
+  const profile = {
+    name: "Walkers",
+    description: "Walkers Description",
+  };
+
   return (
     <div className="profile-card">
-      ProfileCard
       <ProfileImage />
-      <ProfileDescription />
+      <ProfileDescription profile={profile} />
     </div>
   );
 }

@@ -1,7 +1,14 @@
 import React from "react";
 
-function ProfileDescription() {
-  return <div>ProfileDescription</div>;
+import "./index.css";
+
+function ProfileDescription({ profile }) {
+  return (
+    <div className="profile-description">
+      <p>{profile.name}</p>
+      <p>{profile.description}</p>
+    </div>
+  );
 }
 
 export default ProfileDescription;

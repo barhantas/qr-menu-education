@@ -1,7 +1,16 @@
 import React from "react";
 
-function MenuItem() {
-  return <div>MenuItem FİYATI</div>;
+import sampleProductImage from "../../assets/sample-product-image.jpeg";
+
+import "./index.css";
+
+function MenuItem({ menuItem }) {
+  return (
+    <div className="menu-item">
+      <img src={sampleProductImage} alt="profile image" />
+      Price: {menuItem.price} $
+    </div>
+  );
 }
 
 export default MenuItem;

@@ -1,0 +1,9 @@
+.menu-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }   
+
+.menu-item img{
+    height: 50px;
+}
